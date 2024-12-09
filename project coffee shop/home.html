@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Home</title>
+</head>
+<style type="text/css">
+    body{
+        background-image: url('backgroung.png');
+    }
+</style>
+<body>
+
+<header>
+      <table width="100%">
+        <tr>
+            
+            <td>
+               <font size="7">
+                <h1>Coffee Shop</h1>
+               </font>
+           </td>
+            
+            <td align="right">
+                <font size="5">
+                    <a href="home.html">Home</a>&emsp;&emsp;&emsp;
+                    <a href="about.html">About</a>&emsp;&emsp;&emsp;
+                    <a href="service.html">Services</a>&emsp;&emsp;&emsp;
+                    <a href="contact.html">Contact</a>&emsp;&emsp;&emsp;
+                </font>
+            </td>
+        </tr>
+    </table>
+</header>
+
+ <div>
+    <font size="5">
+     <div>
+ 
+    <h2 id="welcomeHeading" align="center">Welcome to Our Coffee Shop!</h2>
+</div>
+
+        </font>
+        <font size="4">
+        <p align="center">Experience the best coffee in town. We serve a variety of coffees brewed to perfection!</p>
+        <p align="center">Visit us today and enjoy a cozy atmosphere with your favorite drink.</p>
+</font>
+        
+        <table>
+            <tr>
+                <td>
+                    
+                    <strong>Our Specialty</strong><br>
+
+                    <p>We take pride in offering a selection of freshly brewed espresso, cappuccinos, lattes, and other coffee beverages, crafted with the finest beans.</p>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+<script>
+    
+    function slideIn() {
+        var element = document.getElementById("welcomeHeading");
+        var pos = -200;  
+        var id = setInterval(frame, 5);  
+        var speed = 10;
+        function frame() {
+            if (pos >= 0) {
+                clearInterval(id);  
+            } else {
+                pos++;  
+                element.style.left = pos + "px";  
+                element.style.position = "relative";  
+            }
+        }
+    }
+    window.onload = slideIn;
+</script>
+</body>
+</html>
